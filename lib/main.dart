@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/bloc/news/news_bloc.dart';
 import 'package:news_app/data/datasources/news_remote_datasource.dart';
-import 'package:news_app/presentation/main_navigation.dart';
+import 'package:news_app/presentation/bloc/news/news_bloc.dart';
+import 'package:news_app/presentation/pages/main_navigation.dart';
 
 void main() {
   runApp(const MyApp());
