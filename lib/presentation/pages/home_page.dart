@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/presentation/home/widgets/list_category.dart';
-import 'package:news_app/presentation/home/widgets/list_news.dart';
-import 'package:news_app/presentation/home/widgets/logo.dart';
+import 'package:news_app/presentation/widgets/list_category.dart';
+import 'package:news_app/presentation/widgets/list_news.dart';
+import 'package:news_app/presentation/widgets/logo.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

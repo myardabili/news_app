@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/common/constants/colors.dart';
 import 'package:news_app/common/constants/images.dart';
-import 'package:news_app/presentation/bookmark/bookmark_page.dart';
-import 'package:news_app/presentation/home/home_page.dart';
-import 'package:news_app/presentation/search/search_page.dart';
+import 'package:news_app/presentation/pages/bookmark_page.dart';
+import 'package:news_app/presentation/pages/home_page.dart';
+import 'package:news_app/presentation/pages/search_page.dart';
 
 class MainNavigation extends StatefulWidget {
   const MainNavigation({super.key});

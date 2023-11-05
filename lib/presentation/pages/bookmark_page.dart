@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/common/constants/fonts.dart';
-import 'package:news_app/presentation/bookmark/widgets/list_category_bookmark.dart';
+import 'package:news_app/presentation/widgets/list_category_bookmark.dart';
 
 class BookmarkPage extends StatefulWidget {
   const BookmarkPage({super.key});

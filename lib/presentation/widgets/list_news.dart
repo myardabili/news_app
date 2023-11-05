@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:news_app/bloc/news/news_bloc.dart';
 import 'package:news_app/common/constants/colors.dart';
 import 'package:news_app/common/constants/fonts.dart';
 import 'package:news_app/data/models/news_response_model.dart';
-import 'package:news_app/presentation/detail_news/detail_news.dart';
+import 'package:news_app/presentation/bloc/news/news_bloc.dart';
+import 'package:news_app/presentation/pages/detail_news.dart';
 
 class ListNews extends StatefulWidget {
   const ListNews({
