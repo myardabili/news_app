@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/data/datasources/news_remote_datasource.dart';
 import 'package:news_app/presentation/bloc/news/news_bloc.dart';
 import 'package:news_app/presentation/bloc/news_category/news_category_bloc.dart';
+import 'package:news_app/presentation/bloc/search_news/search_news_bloc.dart';
 import 'package:news_app/presentation/pages/main_page.dart';
 
 void main() {
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => NewsCategoryBloc(NewsRemoteDatasource()),
+        ),
+        BlocProvider(
+          create: (context) => SearchNewsBloc(NewsRemoteDatasource()),
         ),
       ],
       child: MaterialApp(

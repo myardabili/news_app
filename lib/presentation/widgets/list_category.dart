@@ -41,9 +41,7 @@ class _ListCategoryState extends State<ListCategory> {
                   height: 68,
                   width: 68,
                   decoration: BoxDecoration(
-                    color: selectedCategory == index
-                        ? ColorsName.black
-                        : ColorsName.grey,
+                    color: ColorsName.black,
                     borderRadius: BorderRadius.circular(100),
                   ),
                   child: Image.asset(
@@ -54,13 +52,11 @@ class _ListCategoryState extends State<ListCategory> {
                 ),
                 Text(
                   NewsCategoryModel.newsCategory()[index],
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontFamily: Fonts.fontSF,
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: selectedCategory == index
-                        ? ColorsName.black
-                        : ColorsName.grey,
+                    color: ColorsName.black,
                   ),
                 ),
               ],

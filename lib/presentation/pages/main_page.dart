@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/common/constants/colors.dart';
 import 'package:news_app/common/constants/images.dart';
+import 'package:news_app/presentation/bloc/search_news/search_news_bloc.dart';
 import 'package:news_app/presentation/pages/bookmark_page.dart';
 import 'package:news_app/presentation/pages/home_page.dart';
 import 'package:news_app/presentation/pages/search_page.dart';
@@ -23,7 +24,7 @@ class _MainPageState extends State<MainPage> {
 
   final List<Widget> _pages = [
     const HomePage(),
-    const SearchPage(),
+    const SearchPage(query: ""),
     const BookmarkPage(),
   ];
 

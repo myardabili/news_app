@@ -24,10 +24,10 @@ class _LogoState extends State<Logo> {
         ),
         const SizedBox(width: 10),
         const Text(
-          'News 24',
+          'Daily News',
           style: TextStyle(
             fontFamily: Fonts.fontSF,
-            fontSize: 15,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),

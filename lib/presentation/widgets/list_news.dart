@@ -88,17 +88,19 @@ class _ListNewsState extends State<ListNews> {
                             width: 211,
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
-                              // mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Text(
-                                  // 'Category',
-                                  state.model.articles?[index].source!.name ??
-                                      '',
-                                  style: const TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: Fonts.fontSF,
-                                      color: ColorsName.blue),
+                                SizedBox(
+                                  width: 100,
+                                  child: Text(
+                                    state.model.articles?[index].source!.name ??
+                                        '',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: const TextStyle(
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: Fonts.fontSF,
+                                        color: ColorsName.blue),
+                                  ),
                                 ),
                                 const SizedBox(width: 10),
                                 Container(
