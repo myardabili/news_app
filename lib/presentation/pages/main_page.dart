@@ -5,14 +5,14 @@ import 'package:news_app/presentation/pages/bookmark_page.dart';
 import 'package:news_app/presentation/pages/home_page.dart';
 import 'package:news_app/presentation/pages/search_page.dart';
 
-class MainNavigation extends StatefulWidget {
-  const MainNavigation({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  State<MainNavigation> createState() => _MainNavigationState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MainNavigationState extends State<MainNavigation> {
+class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {

@@ -23,7 +23,7 @@ class _DetailNewsState extends State<DetailNews> {
 
   @override
   void initState() {
-    // isLoading = true;
+    isLoading = true;
     super.initState();
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)

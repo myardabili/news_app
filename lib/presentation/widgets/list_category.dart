@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/common/constants/colors.dart';
 import 'package:news_app/common/constants/fonts.dart';
+import 'package:news_app/data/models/list_images_model.dart';
 import 'package:news_app/data/models/news_category_model.dart';
+import 'package:news_app/presentation/pages/news_category_page.dart';
 
 var selectedCategory = 0;
 
@@ -18,7 +20,7 @@ class _ListCategoryState extends State<ListCategory> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 28,
+      height: 100,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
@@ -27,36 +29,46 @@ class _ListCategoryState extends State<ListCategory> {
               setState(() {
                 selectedCategory = index;
               });
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return NewsCategoryPage(
+                  category: NewsCategoryModel.newsCategory()[index],
+                );
+              }));
             },
-            child: Container(
-              padding: const EdgeInsets.symmetric(
-                horizontal: 15,
-                vertical: 4,
-              ),
-              decoration: BoxDecoration(
-                color: selectedCategory == index
-                    ? ColorsName.black
-                    : ColorsName.lightGrey,
-                borderRadius: BorderRadius.circular(40),
-              ),
-              child: Center(
-                child: Text(
+            child: Column(
+              children: [
+                Container(
+                  height: 68,
+                  width: 68,
+                  decoration: BoxDecoration(
+                    color: selectedCategory == index
+                        ? ColorsName.black
+                        : ColorsName.grey,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Image.asset(
+                    ListImagesModel.listImages()[index],
+                    scale: 14,
+                    color: ColorsName.white,
+                  ),
+                ),
+                Text(
                   NewsCategoryModel.newsCategory()[index],
                   style: TextStyle(
                     fontFamily: Fonts.fontSF,
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
                     color: selectedCategory == index
-                        ? ColorsName.white
+                        ? ColorsName.black
                         : ColorsName.grey,
                   ),
                 ),
-              ),
+              ],
             ),
           );
         },
-        separatorBuilder: (context, index) => const SizedBox(width: 10),
-        itemCount: NewsCategoryModel.newsCategory().length,
+        separatorBuilder: (context, index) => const SizedBox(width: 24),
+        itemCount: 6,
       ),
     );
   }

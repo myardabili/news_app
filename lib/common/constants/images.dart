@@ -10,5 +10,10 @@ class Images {
       'assets/icons/bookmark_selected.png';
   static const String iconShare = 'assets/icons/share.png';
   static const String iconCancel = 'assets/icons/cancel.png';
-  static const String iconArrowBack = 'assets/icons/arrow_back.png';
+  static const String iconSports = 'assets/icons/sports.png';
+  static const String iconTechnology = 'assets/icons/tech.png';
+  static const String iconBusiness = 'assets/icons/business.png';
+  static const String iconEntertainment = 'assets/icons/entertainment.png';
+  static const String iconHealth = 'assets/icons/health.png';
+  static const String iconScience = 'assets/icons/science.png';
 }

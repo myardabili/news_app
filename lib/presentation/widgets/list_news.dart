@@ -134,7 +134,7 @@ class _ListNewsState extends State<ListNews> {
               },
               separatorBuilder: (context, index) => const Divider(
                 thickness: 1,
-                height: 20,
+                height: 24,
                 color: ColorsName.lightGrey,
               ),
               itemCount: state.model.articles!.length,
