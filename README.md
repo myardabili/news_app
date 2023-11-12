@@ -1,6 +1,14 @@
 # news_app
 
-A new Flutter project.
+### Package Using:
+* dartz: [Klik Here](https://pub.dev/packages/dartz)
+* flutter_bloc: [Klik Here](https://pub.dev/packages/flutter_bloc)
+* http: [Klik Here](https://pub.dev/packages/http)
+* intl: [Klik Here](https://pub.dev/packages/intl)
+* webview_flutter: [Klik Here](https://pub.dev/packages/webview_flutter)
+
+### Screenshot
+<img src="https://i.imgur.com/FxFJMru.png" width="300"> <img src="https://i.imgur.com/BgFYtVU.png" width="300"> <img src="https://i.imgur.com/xUwdglU.png" width="300"> <img src="https://i.imgur.com/AaYlddz.png" width="300">
 
 ## Getting Started
 
